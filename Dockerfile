@@ -6,4 +6,4 @@ RUN npm install -g copilot-api@latest \
     && npm cache clean --force \
     && rm -rf /root/.npm /tmp/*
 
-CMD ["copilot-api", "start", "-g", "$GH_TOKEN"]
+CMD ["sh", "-c", "copilot-api start -g $GH_TOKEN"]
