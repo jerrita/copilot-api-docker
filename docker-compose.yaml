@@ -1,0 +1,9 @@
+services:
+  copilot:
+    image: ghcr.io/jerrita/copilot-api-docker:latest
+    container_name: copilot
+    restart: unless-stopped
+    environment:
+        - GH_TOKEN=token
+    network_mode: host
+
